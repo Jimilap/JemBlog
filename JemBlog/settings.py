@@ -59,7 +59,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'articles/front'
+            '',
+            'templates',
+            
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -87,8 +89,8 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': '127.0.0.1',
-        'PORT': '8000',
-    }
+        'PORT': '3660',
+    },
 }
 
 
