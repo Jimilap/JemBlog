@@ -60,8 +60,9 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             '',
-            'templates',
-            
+            'templates/articles',
+            'templates/main_page',
+            'templates/'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,6 +125,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+APPEND_SLASH = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

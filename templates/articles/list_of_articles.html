@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list of articles</title>
+</head>
+<body>
+    {% if articles_list %}
+        <ul>
+        {% for article in articles_list %}
+            <li><a href="{% url 'articles:detail' article.id %}">{{ article.text }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No articles yet, sorry</p>
+    {% endif %}
+    
+    <p><a href="#">write article</a></p>
+    
+</body>
+</html>
